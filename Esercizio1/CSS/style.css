@@ -1,4 +1,99 @@
 body{
+    background-color: aliceblue;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+a, a:target{
+    text-decoration: none;
+    color: black;
+}
+
+header{
+    padding-top: 20px;
+    background-color: rgb(142, 213, 229);
+    text-align:center;
+}
+
+header > div{
+    padding-bottom: 20px;
+}
+#clickablelogo{
+    text-align: left;
+}
+
+nav{
+    background-color: rgb(196, 230, 237);
+    text-align: left;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+dl#menu dd:hover{
+    color: blue;
+}
+
+#menu{
+    text-transform: uppercase;
+
+}
+
+main{
+    text-align: center;
+}
+
+caption{
+    text-align: left;
+    padding-left: 50px;
+    padding-top: 50px;
+}
+
+#tabella{
+    padding-left: 50px;
+}
+
+table{
+    padding-left: 50px;
+    padding-bottom: 50px;
+}
+
+table tbody tr td{
+    border-style: solid;
+    border: 1px;
+    border-color:blue;
+
+}
+
+tr td:first-child{
+    background-color:rgb(219, 185, 137)
+}
+
+.cella-capo{
+    background-color: rgb(241, 241, 191);
+    padding-top: 10px;
+    padding-bottom: 10px;   
+}
+
+.cellaprezzo{
+    background-color:rgb(166, 122, 122);
+    padding-top: 10px;
+    padding-bottom: 10px;   
+}
+
+.bottoni{
+    background-color: #fff;
+    color: blue;
+    border-color: blue;
+}
+
+.bottoni:hover{
+    background-color: #2f00ff;
+    color: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+} 
+
+footer{
+    padding-bottom: 20px;
+    background-color: rgb(142, 213, 229);
+    padding-left: 20px;
+
+}

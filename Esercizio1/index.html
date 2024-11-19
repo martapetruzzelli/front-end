@@ -8,45 +8,45 @@
 </head>
 <body>
     <header>
-        <h1><a href="./index.html">
-                <img src="https://picsum.photos/id/870/536/354?grayscale&blur=2" width="50">
+        <h1><a id="clickablelogo" href="./index.html">
+                <img id="logo" src="https://picsum.photos/id/870/536/354?grayscale&blur=2" width="50">
             </a>Benvenuti in questo sito</h1>
-        <div>Compra i nostri prodotti e scopri i nostri eventi</div><hr>
+        <div>Compra i nostri prodotti e scopri i nostri eventi</div>
         <nav>
-            <ul>
-                <li><a href="./index.html">Homepage</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="./contatti.html">Contacts</a></li>
-            </ul>
+            <dl id="menu">
+                <dd><a href="./index.html">Homepage</a></dd>
+                <dd><a href="#">About us</a></dd>
+                <dd><a href="./contatti.html">Contacts</a></dd>
+            </dl>
         </nav>
     </header>
     <main>
-        <section>
+        <section id="tabella">
             <table>
-                <captation><h2>Compra qualcosa (per favore)</h2></captation>
+                <caption><h2>Compra qualcosa (per favore)</h2></caption>
                 <thead>
                     <tr>
-                        <th>Categoria</th>
-                        <th>Prodotti</th>
-                        <th>Prezzo</th>
+                        <th class="cella-capo cellacat">Categoria</th>
+                        <th class="cella-capo">Prodotti</th>
+                        <th class="cella-capo cellaprezzo">Prezzo</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>frutta</td>
-                        <td>mela</td>
-                        <td>3€</td> 
+                        <td class="sottocella cellacat">frutta</td>
+                        <td class="sottocella">mela</td>
+                        <td class="sottocella cellaprezzo">3€</td> 
                     </tr>
                     <tr>
-                        <td>verdura</td>
-                        <td>broccolo</td>
-                        <td>5€</td>
+                        <td class="sottocella cellacat">verdura</td>
+                        <td class="sottocella">broccolo</td>
+                        <td class="sottocella cellaprezzo">5€</td>
                     </tr>
                 </tbody>
                 <tfoot>
                         <tr>
                             <td colspan="2"><strong>totale:</strong></td>
-                            <td>8€</td>
+                            <td class="cellaprezzo">8€</td>
                         </tr>
                 </tfoot>
             </table>
@@ -71,8 +71,8 @@
                 <br>
                 <textarea id="messaggio" placeholder="Lascia un commento" class="text"></textarea>
                 <br>
-                <button>Invia</button>
-                <button type="reset">Cancella</button>
+                <button class="bottoni" id="invio">Invia</button>
+                <button class="bottoni" type="reset">Cancella</button>
             </form>
         </section>
     </main>
