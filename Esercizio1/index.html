@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizio 1</title>
+    <link rel="styesheet" href="./CSS/style.css">
+</head>
+<body>
+    <header>
+        <h1><a href="./index.html">
+                <img src="https://picsum.photos/id/870/536/354?grayscale&blur=2" width="50">
+            </a>Benvenuti in questo sito</h1>
+        <div>Compra i nostri prodotti e scopri i nostri eventi</div><hr>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Homepage</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="./contatti.html">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <table>
+                <captation><h2>Compra qualcosa (per favore)</h2></captation>
+                <thead>
+                    <tr>
+                        <th>Categoria</th>
+                        <th>Prodotti</th>
+                        <th>Prezzo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>frutta</td>
+                        <td>mela</td>
+                        <td>3€</td> 
+                    </tr>
+                    <tr>
+                        <td>verdura</td>
+                        <td>broccolo</td>
+                        <td>5€</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                        <tr>
+                            <td colspan="2"><strong>totale:</strong></td>
+                            <td>8€</td>
+                        </tr>
+                </tfoot>
+            </table>
+        </section>
+        <section>
+            <h2>Guarda il nostro video</h2>
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Sagg08DrO5U?si=yeu9J8akMjNYFa8s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+        <section>
+            <form method="POST">
+                <h3>Iscriviti alla nostra Newsletter!</h3>
+                <label for="nome">Nome</label>
+                <input id="nome" type="text" placeholder="Inserisci il tuo nome" required>
+                <label for="email">email</label>
+                <input id="email" type="email" placeholder="Inserisci la tua mail" required>
+                <br>
+                <p>Desideri ricevere informazioni di marketing?</p>
+                <label for="si">Sì</label>
+                <input id="si" type="radio" name="scelta" checked>
+                <label for="no">No</label>
+                <input id="no" type="radio" name="scelta">
+                <br>
+                <textarea id="messaggio" placeholder="Lascia un commento" class="text"></textarea>
+                <br>
+                <button>Invia</button>
+                <button type="reset">Cancella</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <hr>
+        <p>Questa è un'azienda vera.</p>
+        <hr>
+        <section>
+            <p>Come trovarci:</p>
+            <ul>
+                <li><a href="mailto:martapetruzzelli1@gmail.com">email</a></li>
+                <li><a href="tel:+3900000000">Telefono</a></li>
+                <li><a href="https://wa.me/+3900000000?text=ciao" target="_blank">Whatsapp</a></li>
+            </ul>
+        </section>
+    </footer>
+</body>
+</html>
