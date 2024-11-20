@@ -22,10 +22,13 @@ header > div{
 }
 
 nav{
-    background-color: rgb(196, 230, 237);
     text-align: left;
     padding-top: 3px;
     padding-bottom: 3px;
+}
+
+.sfondo-chiaro{
+    background-color: rgb(196, 230, 237);
 }
 
 dl#menu dd:hover{
@@ -94,6 +97,10 @@ tr td:first-child{
 footer{
     padding-bottom: 20px;
     background-color: rgb(142, 213, 229);
-    padding-left: 20px;
+}
 
+#extra{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: left;
 }
