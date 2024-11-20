@@ -17,6 +17,7 @@ header{
 header > div{
     padding-bottom: 20px;
 }
+
 #clickablelogo{
     text-align: left;
 }
@@ -37,7 +38,6 @@ dl#menu dd:hover{
 
 #menu{
     text-transform: uppercase;
-
 }
 
 main{
@@ -63,7 +63,6 @@ table tbody tr td{
     border-style: solid;
     border: 1px;
     border-color:blue;
-
 }
 
 tr td:first-child{

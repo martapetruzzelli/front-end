@@ -1,0 +1,87 @@
+body{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    line-height: 1.25rem
+}
+
+.titolo{
+    font-weight: 700;
+    line-height: 2rem;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+/* .scritta-bianca{
+    color: white;
+} */
+
+nav{
+    background-color: rgb(32, 82, 110);
+    padding: 6px 0 6px 7px;
+    font-size: 0.8rem;
+    color: #fff;
+}
+
+.sfondo-ceruleo{
+    background-color:rgb(104, 218, 190);
+    color: #fff;
+    text-align: center;
+}
+
+#intro{
+    padding: 60px 0px;
+    min-height: 150px;
+}
+
+#intro > img{
+    border-radius: 50%;
+    margin:30px 0;
+}
+
+h1{
+    font-size: 2rem;
+}
+
+#sottotitolo{
+    font-size: 0.9rem;
+}
+
+main{
+    padding: 50px 20px;
+}
+
+#elenco-lavori{
+    margin: 0 auto;
+    text-align: center;
+}
+#portfolio{
+    color: rgb(32, 82, 110);
+    text-align: center;
+    font-size: 1.5rem;
+    border-bottom: 2px solid rgb(32, 82, 110);
+    padding-bottom: 6px;
+    margin:10px 110px;
+}
+.work{
+    display: inline-block;
+    width: calc(100%/1);
+    border-radius: 3%;
+    background-color:blueviolet;
+    padding:20px;
+    box-sizing: border-box;
+    margin: 10px 0;
+}
+
+.work:hover{
+    background-color:blue;
+}
+
+.prev{
+    border-radius: 50%;
+}
+
+
+
+
+
