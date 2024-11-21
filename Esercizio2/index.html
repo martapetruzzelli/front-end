@@ -31,7 +31,7 @@
         </section>
     </header>
     <main>
-        <section id="elenco-lavori">
+        <section id="elenco-lavori" class="container">
             <h2 id="portfolio" class="uppercase titolo testo-grigio">Portfolio</h2>
             <div class="work"><img width="130px" height="130px" class="prev" src="https://picsum.photos/id/237/200"></div>
             <div class="work"><img width="130px" height="130px" class="prev" src="https://picsum.photos/id/870/200?grayscale&blur=2"></div>
@@ -46,20 +46,20 @@
             <h2 class="uppercase titolo">About</h2>
             <div class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam vitae consequatur libero esse fuga praesentium eius neque inventore perspiciatis ut, a laborum deleniti nesciunt vero laudantium dolorum reprehenderit, quibusdam accusamus.</div>
             <div class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eum vero a voluptatum animi incidunt ipsam repudiandae veniam quisquam assumenda cupiditate repellat illum, consectetur, soluta earum, in odit suscipit. Eligendi.</div>
-            <button id="download">Free Download!</button>
+            <div><button id="download">Free Download!</button></div>
         </section>
         <section id="scrivimi">
             <h2 class="uppercase titolo testo-grigio">Contact Me</h2>
-            <form>
-                <label for="nome">Full Name</label>
+            <form id="compila">
+                <label for="nome" class="dati">Full Name</label>
                 <input required name="nome" id="tuonome" type="text" class="contact-me">
-                <label for="email">Email Address</label>
+                <label for="email" class="dati">Email Address</label>
                 <input required name="email" id="tuamail" type="email" class="contact-me">
-                <label for="numero">Phone Number</label>
-                <input required name="nmero" id="tuonumero" type="number" class="contact-me">
-                <label for="messaggio">Message</label>
+                <label for="numero" class="dati">Phone Number</label>
+                <input required name="numero" id="tuonumero" type="number" class="contact-me">
+                <label for="messaggio" class="dati">Message</label>
                 <input required name="messaggio" id="tuomessaggio" type="textarea" class="contact-me">
-                <button id="invio">Send</button>
+                <button id="invio" class="dati">Send</button>
             </form>
         </section>
     </aside>

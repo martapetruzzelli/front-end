@@ -84,7 +84,7 @@ h1{
     font-size: 0.9rem;
 }
 
-#elenco-lavori{
+.container{
     padding: 50px 20px;
     margin: 0 auto;
     text-align: center;
@@ -105,13 +105,16 @@ h2{
     margin:10px auto;
 }
 .work{
-    /* display: inline-block;
-    width: calc(100%/1 - 0.2rem); */
+    display: inline-block;
+    width: calc(100%/1 - 0.2rem);/*?????*/
     border-radius: 7px;
     background-color:rgb(121, 34, 92);
     padding:20px;
     box-sizing: border-box;
     margin: 10px 0;
+    max-width: 300px;
+    text-align: center;
+    margin:13px 10px;
 }
 
 .work:nth-of-type(2){
@@ -157,8 +160,8 @@ h2{
     text-align: left;
     font-size: 0.9rem;
     margin:10px 0;
-    /* max-width: 500px;
-    display: inline-block; */
+    margin:13px 10px;
+    display: inline-block;
 }
 
 #download{
@@ -168,6 +171,7 @@ h2{
     color: white;
     border: 1px solid white;
     border-radius: 5px;
+
 }
 
 #download:hover{
@@ -183,6 +187,12 @@ h2{
 
 #scrivimi{
     padding: 60px 10px;
+    max-width: 600px;
+
+}
+
+.dati{
+    text-align: left;
 }
 
 input{
@@ -242,3 +252,52 @@ h3{
 /*inizio breaking points*/
 
 
+@media screen and (min-width: 481px){
+    .work{
+        display: inline-block;
+        width: calc(100%/2 - 0.2rem);
+        min-width: 300px;
+    }
+    .container{
+        max-width: 768px;
+        margin: 0 auto;
+    }
+    .info{
+        display: inline-block;
+        width: calc(100%/2 - 0.2rem);
+        min-width: 400px;
+        max-width: 500px;
+    }
+    #scrivimi{
+        margin: 0 auto;
+    } 
+    #compila{
+        display: inline-block;
+        width: calc(100%/1 - 0.2rem);
+    }
+
+
+}
+
+
+@media screen and (min-width: 769px){
+    .work{
+        width: calc(100%/3 - 0.2rem);
+    }
+    .container{
+        max-width: 1279px;
+    }
+}
+
+
+
+
+
+
+
+/*@media screen and (min-width: 1280px){
+    .work{
+        width: calc(100%/3 - 0.2rem);
+
+    }
+}*/
