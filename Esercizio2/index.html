@@ -13,12 +13,20 @@
 <body>
     <header>
         <section id="menu">
-            <nav class="uppercase scritta-bianca titolo">Start Bootstrap</nav>
+                <label for="toggle" class="uppercase scritta-bianca titolo scritta-menu">Start Bootstrap</label>
+                <input type="checkbox" id="toggle">
+            <nav>
+                <ul id="mobile-menu">
+                    <li><a class="opzioni uppercase scritta-bianca titolo scritta-menu" href="#">Home</a></li>
+                    <li><a class="opzioni uppercase scritta-bianca titolo scritta-menu" href="#">Chi Siamo</a></li>
+                    <li><a class="opzioni uppercase scritta-bianca titolo scritta-menu" href="#">Contatti</a></li>
+                </ul>
+            </nav>
         </section>
         <section class="sfondo-ceruleo scritta-bianca" id="intro">
             <div id="profilepic"></div>
             <img id="profilo" src="https://picsum.photos/536/354" width="120px" height="120px"></div>
-            <h1 class="uppercase titolo">Start<br> Bootstrap</h1>
+            <h1 class="uppercase titolo">Start Bootstrap</h1>
             <div id="sottotitolo">Graphic Artist - Web Designer - Illustrator</div>
         </section>
     </header>
@@ -59,6 +67,8 @@
         <section class="scritta-bianca" id="footer1">
             <h3 class="uppercase titolo">Location</h3>
             <div>2215 John Daniel Drive <br> Clark, MO 65243</div>
+            <h3 class="uppercase titolo">Around the Web</h3>
+            <div>...</div>
             <h3 class="uppercase titolo">About Freelancer</h3>
             <div>Freelancer is a free to use, MIT licensed Bootstrap theme created by <a id="linksito" href="#">Start Bootstrap</a>.</div>
         </section>
