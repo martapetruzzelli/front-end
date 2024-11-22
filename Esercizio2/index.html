@@ -15,12 +15,19 @@
         <section id="menu">
                 <label for="toggle" class="uppercase scritta-bianca titolo scritta-menu">Start Bootstrap</label>
                 <input type="checkbox" id="toggle">
-            <nav>
-                <ul id="mobile-menu">
-                    <li><a class="opzioni uppercase scritta-bianca titolo scritta-menu" href="#">Home</a></li>
-                    <li><a class="opzioni uppercase scritta-bianca titolo scritta-menu" href="#">Chi Siamo</a></li>
-                    <li><a class="opzioni uppercase scritta-bianca titolo scritta-menu" href="#">Contatti</a></li>
+            <nav class="mobile-menu">
+                <ul class="mobile-menu">
+                    <li><a class="opzioni uppercase scritta-bianca titolo scritta-menu" href="#elenco-lavori">Portfolio</a></li>
+                    <li><a class="opzioni uppercase scritta-bianca titolo scritta-menu" href="#about">About</a></li>
+                    <li><a class="opzioni uppercase scritta-bianca titolo scritta-menu" href="#scrivimi">Contact</a></li>
                 </ul>
+            </nav>
+            <nav class="desktop-menu">
+                <div>
+                    <a href="#elenco-lavori" class="button-desktop opzioni uppercase scritta-bianca titolo">Portfolio</a>
+                    <a href="#about" class="button-desktop opzioni uppercase scritta-bianca titolo">About</a>
+                    <a href="#scrivimi" class="button-desktop opzioni uppercase scritta-bianca titolo">Contact</a>
+                </div>
             </nav>
         </section>
         <section class="sfondo-ceruleo scritta-bianca" id="intro">
@@ -65,12 +72,9 @@
     </aside>
     <footer>
         <section class="scritta-bianca" id="footer1">
-            <h3 class="uppercase titolo">Location</h3>
-            <div>2215 John Daniel Drive <br> Clark, MO 65243</div>
-            <h3 class="uppercase titolo">Around the Web</h3>
-            <div>...</div>
-            <h3 class="uppercase titolo">About Freelancer</h3>
-            <div>Freelancer is a free to use, MIT licensed Bootstrap theme created by <a id="linksito" href="#">Start Bootstrap</a>.</div>
+            <div class="dim-footer"><h3 class="uppercase titolo">Location</h3>2215 John Daniel Drive Clark, MO 65243</div>
+            <div class="dim-footer"><h3 class="uppercase titolo">Around the Web</h3><a class="social" href="#"><img width="40px" height="40px" src="./img/pngegg (1).png"></a><a class="social" href="#"><img width="40px" height="40px" src="./img/pngegg (2).png"></a><a class="social" href="#"><img width="40px" height="40px" src="./img/pngegg (3).png"></a><a class="social" href="#"><img width="40px" height="40px" src="./img/pngegg (4).png"></a></div>
+            <div class="dim-footer"><h3 class="uppercase titolo">About Freelancer</h3>Freelancer is a free to use, MIT licensed Bootstrap theme created by <a id="linksito" href="#">Start Bootstrap</a>.</div>
         </section>
         <section class="scritta-bianca" id="footer2">
             <div>Copyright © Your Website 2023</div>
