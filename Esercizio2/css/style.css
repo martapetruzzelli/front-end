@@ -260,14 +260,10 @@ h3{
     font-size: 1.1rem;
 }
 
-.social{
-    margin: 2px;
-}
-
-.social > img{
-    border: 1px solid #fff;
-    border-radius: 50%;
-    opacity: 0;
+.fa-solid{
+    font-size: 36px;
+    color:white;
+    padding: 4px;
 }
 
 #linksito{
