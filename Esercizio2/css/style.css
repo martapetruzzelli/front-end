@@ -211,6 +211,13 @@ input{
     margin-bottom: 30px;
 }
 
+textarea{
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid rgb(216, 218, 231);
+    margin-bottom: 30px;
+}
+
 label{
     color: rgb(147, 148, 156);
 }
