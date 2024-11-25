@@ -60,10 +60,17 @@ a{
 
 .rounded-img{
     border-radius: 100%;
-    width: 150px;
+    max-width: 150px;
 }
 
 /* header */
+
+label[for="toggle"]{
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: 700;
+    line-height: 2rem;
+}
 
 #menu{
     color: #fff;
@@ -76,8 +83,26 @@ a{
 }
 
 .mobile-menu{
+        display: visible;
+}
+
+.mobile-menu > ul{
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.mobile-menu > ul >li{
+    padding-top: 5px;
+}
+
+input[type="checkbox"]{
     display: none;
-    margin-top: 10px;
+}
+
+input:checked + nav.mobile-menu > ul{
+    height: 115px;
 }
 
 .scritta-mobile{
@@ -85,6 +110,7 @@ a{
     text-transform: uppercase;
     font-weight: 2rem;
     line-height: 2rem;
+    font-size: 0.8rem;
 }
 
 /* main */
@@ -137,8 +163,12 @@ h2.underlined{
     text-align: left;
 }
 
+#info{
+    margin-bottom: 45px;
+}
+
 p.text-left{
-    margin-bottom: 25px;
+    margin-bottom: 10px;
 }
 
 a[download]{
@@ -154,19 +184,21 @@ a[download]:hover{
     color: var(--bg-green);
 }
 
+/* aside */
+
 .contact-me{
     border: none;
     border-bottom: 1px solid #cdcdcd;
     color: #ebeaea;
-    display: block;
     font-size: 1.2rem;
-    padding-bottom: 20px;
+    height: 80px;
     margin-bottom: 30px;
     width: 100%;
 }
 
 textarea{
     font-family: "Montserrat", sans-serif;
+    height: 100px;
 }
 
 #invio{
@@ -184,12 +216,11 @@ textarea{
     border: 1px solid var(--bg-green);
 }
 
-.space-footer{
-    margin-bottom: 30px;
-}
+/* footer */
 
 .space-footer > h3{
     margin-bottom: 10px;
+    margin-top: 20px;
 }
 
 .space-footer > a{
@@ -201,4 +232,86 @@ textarea{
     text-align: center;
     padding: 20px;
     font-size: 0.7rem;
+}
+
+/* responsive */
+
+@media screen and (min-width: 481px){
+    .grid{
+        display: flex;
+        gap: 40px;
+        flex-wrap: wrap;
+    }
+
+    .work{
+        margin-bottom: 0;
+        flex: 1 0 25%;
+    }
+    .space-footer{
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    .grid > p{
+        max-width: 400px;
+        align-content: center;
+        margin: 0 auto;
+    }
+    #s2 > .container-small{
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+
+}
+
+@media screen and (min-width: 769px){
+    .container-big{
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+    .container-small{
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    #s2 > .container-small{
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (min-width: 1080px){
+
+    .menu-grid > h3{
+        display: flex;
+    }
+
+    .mobile-menu{
+        display: none;
+    }
+
+    label{
+        flex: 2 0 auto;
+    }
+
+    .desktop-menu{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex: 0.5 1 auto;
+    }
+
+    .desktop-menu > ul > li{
+        display: inline;
+    }
+    .scritta-desktop{
+        color: #fff;
+        padding: 0 5px;
+        font-size: 0.8rem;
+        padding: 10px 15px;
+    }
+
+    .scritta-desktop:hover{
+        background-color:  rgb(104, 218, 190);
+        border-radius: 5px;
+    }
+    
 }
