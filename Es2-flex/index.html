@@ -18,16 +18,16 @@
             <input type="checkbox" id="toggle"> -->
         <nav class="mobile-menu">
             <ul>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a class= "scritta-mobile" href="#s1">Portfolio</a></li>
+                <li><a class= "scritta-mobile" href="#s2">About</a></li>
+                <li><a class= "scritta-mobile" href="#s3">Contact</a></li>
             </ul>
         </nav>
         <nav class="desktop-menu">
             <ul>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#s1">Portfolio</a></li>
+                <li><a href="#s2">About</a></li>
+                <li><a href="#s3">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -37,7 +37,7 @@
             <h1>Start Bootstrap</h1>
             <p>Graphic Artist - Web Designer - Illustrator</p>
         </section>
-        <section class="section-space">
+        <section class="section-space" id="s1">
             <h2 class="underlined">Portfolio</h2>
             <div class="work">
                 <img src="https://picsum.photos/200" class="rounded-img">
@@ -58,17 +58,17 @@
                 <img src="https://picsum.photos/200" class="rounded-img">
             </div>
         </section>
-        <section class="bg-green section-space">
+        <section class="bg-green section-space" id="s2">
             <h2>About</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam vitae consequatur libero esse fuga praesentium eius neque inventore perspiciatis ut, a laborum deleniti nesciunt vero laudantium dolorum reprehenderit, quibusdam accusamus.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eum vero a voluptatum animi incidunt ipsam repudiandae veniam quisquam assumenda cupiditate repellat illum, consectetur, soluta earum, in odit suscipit. Eligendi.</p>
+            <p class="text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam vitae consequatur libero esse fuga praesentium eius neque inventore perspiciatis ut, a laborum deleniti nesciunt vero laudantium dolorum reprehenderit, quibusdam accusamus.</p>
+            <p class="text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eum vero a voluptatum animi incidunt ipsam repudiandae veniam quisquam assumenda cupiditate repellat illum, consectetur, soluta earum, in odit suscipit. Eligendi.</p>
             <div><a download href="#">Free Download!</a></div>
         </section>
     </main>
     <aside>
-        <section class="section-space">
+        <section class="section-space" id="s3">
             <h2>Contact Me</h2>
-            <form>
+            <form class="text-left">
                 <input required name="nome" id="tuonome" type="text" class="contact-me" placeholder="Full Name">
                 <input required name="email" id="tuamail" type="email" class="contact-me" placeholder="Email Address">
                 <input required name="numero" id="tuonumero" type="number" class="contact-me" placeholder="Phone Number">
@@ -79,24 +79,24 @@
     </aside>
     <footer>
         <section class="bg-blue section-space">
-            <div>
+            <div class="space-footer">
                 <h3>Location</h3>
                 2215 John Daniel Drive Clark, MO 65243
             </div>
-            <div>
+            <div class="space-footer">
                 <h3>Around the Web</h3>
                 <a class="social" href="#"><i class="fa-solid fa-heart"></i></a>
                 <a class="social" href="#"><i class="fa-solid fa-cloud"></i></a>
                 <a class="social" href="#"><i class="fa-solid fa-car"></i></a>
                 <a class="social" href="#"><i class="fa-solid fa-bars"></i></a>
             </div>
-            <div>
+            <div class="space-footer">
                 <h3>About Freelancer</h3>
                 Freelancer is a free to use, MIT licensed Bootstrap theme created by <a id="linksito" href="#">Start Bootstrap</a>.
             </div>
         </section>
         <section class="bg-dark-blue">
-            <div>Copyright © Your Website 2023</div>
+            <div id="footer2">Copyright © Your Website 2023</div>
         </section>
     </footer>
 </body>
