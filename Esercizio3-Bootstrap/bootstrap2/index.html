@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizio 3 - Bootstrap</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/71d6a949c4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="menu" class="bg-dark text-white py-3 ps-3">
+        <h3 class="h4 mb-0">Start Bootstrap</h3>
+        <nav class="navbar navbar-expand-lg d-none">
+ 
+        </nav>
+    </header>
+    <main>
+        <section id="opening" class="text-center py-5 px-2 bg-primary text-light">
+            <img class="rounded-image mb-4" src="https://picsum.photos/200">
+            <h1 class="text-uppercase">Start Bootstrap</h1>
+            <h2 class="small-title h6 text-capitalize">Graphic Artist - Web Designer - Illustrator</h2>
+        </section>
+        <section id="portfolio" class="py-5">
+            <h2 class="underline text-center border-bottom pb-3 mb-3 text-muted">Portfolio</h2>
+            <div class="container">
+                <div class="row px-3">
+                    <div class="work bg-primary text-center py-4 mb-3 col-12 col-md-6 col-lg-4">
+                        <img src="https://picsum.photos/200" class="rounded-image">
+                    </div>
+                    <div class="work bg-primary text-center py-4 mb-3 col-12 col-md-6 col-lg-4">
+                        <img src="https://picsum.photos/200" class="rounded-image">
+                    </div>
+                    <div class="work bg-primary text-center py-4 mb-3 col-12 col-md-6 col-lg-4">
+                        <img src="https://picsum.photos/200" class="rounded-image">
+                    </div>
+                    <div class="work bg-primary text-center py-4 mb-3 col-12 col-md-6 col-lg-4">
+                        <img src="https://picsum.photos/200" class="rounded-image">
+                    </div>
+                    <div class="work bg-primary text-center py-4 mb-3 col-12 col-md-6 col-lg-4">
+                        <img src="https://picsum.photos/200" class="rounded-image">
+                    </div>
+                    <div class="work bg-primary text-center py-4 mb-3 col-12 col-md-6 col-lg-4">
+                        <img src="https://picsum.photos/200" class="rounded-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="bg-primary text-white py-5 px-2">
+            <h2 class="text-center mb-3">About</h2>
+            <div class="container">
+                <div class="row">
+                    <p class="col-12 col-md-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam vitae consequatur libero
+                    esse fuga praesentium eius neque inventore perspiciatis ut, a laborum deleniti nesciunt vero
+                    laudantium
+                    dolorum reprehenderit, quibusdam accusamus.</p>
+                    <p class="col-12 col-md-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eum vero a voluptatum animi
+                    incidunt ipsam repudiandae veniam quisquam assumenda cupiditate repellat illum, consectetur, soluta
+                    earum, in odit suscipit. Eligendi.</p>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-lg-4 text-center">
+                        <a href="#" class="btn text-white border py-2 px-3 mt-3 mb-4" role="button" download>FreeDownload!</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <aside>
+        <section id="contact" class="py-5">
+            <h2 class="text-center">Contact Me</h2>
+            <form class="px-2 text-start">
+                <input required name="nome" id="tuonome" type="text" class="contact-me form-control border-0 border-bottom mb-4 pb-3 text-secondary" placeholder="Full Name">
+                <input required name="email" id="tuamail" type="email" class="contact-me form-control border-0 border-bottom mb-4 pb-3 text-secondary" placeholder="Email Address">
+                <input required name="numero" id="tuonumero" type="number" class="contact-me form-control border-0 border-bottom mb-4 pb-3 text-secondary" placeholder="Phone Number">
+                <textarea class="contact-me form-control border-0 border-bottom mb-4 pb-3 text-secondary" placeholder="Message"></textarea>
+                <button id="invio" class="btn btn-primary text-white py-2 px-3 mb-4">Send</button>
+            </form>
+        </section>
+    </aside>
+    <footer class="bg-dark">
+        <section class="container py-5 bg-dark">
+            <div class="row text-center px-2 text-white">
+                <div class="col-12 mb-4">
+                    <h3 class="uppercase h4">Location</h3>
+                    2215 John Daniel Drive Clark, MO 65243
+                </div>
+                <div class="col-12 mb-4">
+                    <h3 class="uppercase h4">Around the Web</h3>
+                </div>
+                <div class="col-12">
+                    <h3 class="uppercase h4">About Freelancer</h3>
+                     Freelancer is a free to use, MIT licensed Bootstrap theme created by <a class="text-primary" href="#">Start Bootstrap</a>.
+                </div>
+            </div>
+        </section>
+        <div class="text-center bg-secondary text-white py-3">
+            Copyright © Your Website 2023
+        </div>
+    </footer>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
