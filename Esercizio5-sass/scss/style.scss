@@ -1,0 +1,115 @@
+@import "reset";
+@import "variabili";
+@import "mixins";
+@import "functions";
+
+.flex{
+    display:flex;
+}
+
+.grid{
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.bacheca{
+    flex-basis: 25%;
+    flex-grow: 1;
+    border-radius : 5px;
+}
+
+#menubar{
+    ul{
+        list-style: none;
+        justify-content: flex-end;
+
+    }
+}
+
+
+.text-center{
+    text-align: center;
+}
+
+@each $nomeColore, $colore in $colors{
+
+    .text-#{$nomeColore} {
+        color: $colore
+    }
+
+    .bg-#{$nomeColore}{
+        background-color: $colore
+    }
+
+    .btn-#{$nomeColore}{
+        background-color: $colore;
+        color: contrast($colore);
+        @include bordo (1px, contrast($colore), solid, 5px);
+        &:hover{
+            background-color: contrast($colore);
+            color: $colore;
+            @include bordo (1px, $colore, solid, 5px);
+            cursor:pointer
+        }
+    }
+    
+    .text-#{$nomeColore}-contrasto{
+        color: contrast($colore);
+    }
+
+    .bg-#{$nomeColore}-contrasto{
+        background-color: contrast($colore);
+    }
+
+    .bordo-#{$nomeColore}{
+        @include bordo (1px, $colore, solid, 5px);
+    }
+
+}
+
+@each $lato in $lati{
+
+    @each $margine in $margini{
+
+        .m#{$lato}-#{$margine}{
+            margin-#{$lato}: calc($margine * 10) + px;
+        }
+
+    }
+
+}
+
+@each $margine in $margini{
+
+    .m-#{$margine}{
+        margin: calc($margine * 10) + px;
+    }
+
+}
+
+
+@each $lato in $lati{
+
+    @each $padding in $paddings{
+
+        .p#{$lato}-#{$padding}{
+            padding-#{$lato}: calc($padding * 10) + px;
+        }
+
+    }
+
+}
+
+@each $padding in $paddings{
+
+    .p-#{$padding}{
+        padding: calc($padding * 10) + px;
+    }
+    
+}
+
+.bordo{
+    @include bordo (1px, map-get($colors, primario), solid, 5px);
+}

@@ -15,7 +15,7 @@
 @include tema-colori(sfondo1, rgb(255, 206, 99));
 @include tema-colori(sfondo2, rgb(155, 253, 135));
 
-@include dimensione-testo(piccolo, $sottotitolo, 1rem);
+@include dimensione-testo(piccolo, $sottotitolo, 400);
 @include dimensione-testo(grande, $titolo, $grassetto);
 
 

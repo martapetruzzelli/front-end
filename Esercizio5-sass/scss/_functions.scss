@@ -1,0 +1,12 @@
+@function contrast($color){
+
+    @if(lightness($color) < 25){
+        @return lighten($color, 25%);
+    }@else if(lightness($color) <= 50){
+        @return lighten($color, 30%);
+    }@else if(lightness($color) > 50){
+        @return darken($color, 20%);
+    }@else if(lightness($color) > 75){
+        @return darken($color, 20%);
+    }
+}

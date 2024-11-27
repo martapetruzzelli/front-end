@@ -1,0 +1,4 @@
+@mixin bordo($spessore, $colore, $stile : solid, $angolo){
+    border: $spessore $colore $stile;
+    border-radius: $angolo;
+}
