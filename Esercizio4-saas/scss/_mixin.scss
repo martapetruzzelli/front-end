@@ -1,0 +1,31 @@
+@mixin tema-colori($nome-colore, $valore-colore){
+    .bg-#{$nome-colore}{
+        background-color: $valore-colore;
+    }
+    .text-#{$nome-colore}{
+        color: $valore-colore;
+    }
+}
+
+@mixin container-big{
+    min-height: 150px;
+    padding: 30px 10px;
+    width: 100%;
+}
+
+@mixin container-small{
+    width: 100%;
+    padding:20px 10px;
+}
+
+@mixin bordo($spessore, $colore, $stile : solid, $angolo){
+    border: $spessore $colore $stile;
+    border-radius: $angolo;
+}
+
+@mixin dimensione-testo($nome-testo, $grandezza-testo, $spessore-testo){
+    .font-#{$nome-testo}{
+        font-size: $grandezza-testo;
+        font-weight: $spessore-testo;
+    }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "esercizio4-saas",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "sass": "sass scss/style.scss css/style.css -w",
+    "minify-sass": "sass scss/style.scss css/style.css -w --style compressed"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

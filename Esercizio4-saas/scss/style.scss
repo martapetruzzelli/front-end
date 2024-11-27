@@ -1,0 +1,51 @@
+@import "reset";
+@import "variabili";
+@import "mixin";
+
+// .bg-bgcolor{
+//     background-color: $bgColor;
+// }
+
+// .text-primary{
+//     color: $Primary;
+// }
+
+@include tema-colori(primario, rgb(247, 86, 86));
+@include tema-colori(secondario, rgb(47, 120, 255));
+@include tema-colori(sfondo1, rgb(255, 206, 99));
+@include tema-colori(sfondo2, rgb(155, 253, 135));
+
+@include dimensione-testo(piccolo, $sottotitolo, 1rem);
+@include dimensione-testo(grande, $titolo, $grassetto);
+
+
+.big{
+    @include container-big;
+    margin: 0 auto;
+}
+
+.small{
+    @include container-small;
+}
+
+.text-center{
+    text-align: center;
+
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.figlio{
+    flex: 1 0 auto;
+}
+
+.border{
+    @include bordo (2px, $secondario, solid, 5px);
+    margin: 5px 20px;
+    padding: 10px 50px;
+}
