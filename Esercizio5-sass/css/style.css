@@ -323,6 +323,76 @@ table {
   border-radius: 5px;
 }
 
+.text-dark-primario {
+  color: rgb(83, 83, 136);
+}
+
+.bg-dark-primario {
+  background-color: rgb(83, 83, 136);
+}
+
+.btn-dark-primario {
+  background-color: rgb(83, 83, 136);
+  color: rgb(169.301369863, 169.301369863, 202.698630137);
+  border: 1px rgb(169.301369863, 169.301369863, 202.698630137) solid;
+  border-radius: 5px;
+}
+.btn-dark-primario:hover {
+  background-color: rgb(169.301369863, 169.301369863, 202.698630137);
+  color: rgb(83, 83, 136);
+  border: 1px rgb(83, 83, 136) solid;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.text-dark-primario-contrasto {
+  color: rgb(169.301369863, 169.301369863, 202.698630137);
+}
+
+.bg-dark-primario-contrasto {
+  background-color: rgb(169.301369863, 169.301369863, 202.698630137);
+}
+
+.bordo-dark-primario {
+  border: 1px rgb(83, 83, 136) solid;
+  border-radius: 5px;
+}
+
+.text-light-primario {
+  color: rgb(212, 212, 255);
+}
+
+.bg-light-primario {
+  background-color: rgb(212, 212, 255);
+}
+
+.btn-light-primario {
+  background-color: rgb(212, 212, 255);
+  color: #6e6eff;
+  border: 1px #6e6eff solid;
+  border-radius: 5px;
+}
+.btn-light-primario:hover {
+  background-color: #6e6eff;
+  color: rgb(212, 212, 255);
+  border: 1px rgb(212, 212, 255) solid;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.text-light-primario-contrasto {
+  color: #6e6eff;
+}
+
+.bg-light-primario-contrasto {
+  background-color: #6e6eff;
+}
+
+.bordo-light-primario {
+  border: 1px rgb(212, 212, 255) solid;
+  border-radius: 5px;
+}
+
 .mleft-0 {
   margin-left: 0px;
 }
