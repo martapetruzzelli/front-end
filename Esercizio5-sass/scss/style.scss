@@ -25,7 +25,7 @@
         list-style: none;
         justify-content: flex-end;
     }
-}
+} 
 
 .text-center{
     text-align: center;
@@ -88,24 +88,43 @@
 }
 
 
+// @each $lato in $lati{
+
+//     @each $padding in $paddings{
+
+//         .p#{$lato}-#{$padding}{
+//             padding-#{$lato}: calc($padding * 10) + px;
+//         }
+
+//     }
+
+// }
+
 @each $lato in $lati{
 
-    @each $padding in $paddings{
+    @for $i from 0 through 10 {
 
-        .p#{$lato}-#{$padding}{
-            padding-#{$lato}: calc($padding * 10) + px;
+        .p#{$lato}-#{$i}{
+            padding-#{$lato}: #{$i * 10}px;
         }
-
-    }
-
-}
-
-@each $padding in $paddings{
-
-    .p-#{$padding}{
-        padding: calc($padding * 10) + px;
     }
     
+}
+
+
+// @each $padding in $paddings{
+
+//     .p-#{$padding}{
+//         padding: calc($padding * 10) + px;
+//     }
+    
+// }
+
+@for $i from 0 through 10 {
+
+    .p-#{$i}{
+        padding: #{$i * 10}px;
+    }
 }
 
 .bordo{
