@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let array = [
+            'gatto',
+            'mela',
+        ]
+
+        console.log(array.includes('Ciao'))
+
+        function verifica(){
+            if (array.includes('Ciao') == false ){
+                array.push('Ciao');
+                console.log(array)
+            }
+        }
+
+        verifica();
+
+        let utenti = [];
+        
+
+        function dati(nome, cognome, anni){
+            let obj = {
+                nome : "Marta",
+                cognome : "Petruzzelli",
+                anni : 26
+            }
+
+            utenti.push(obj);
+        }
+
+        dati();
+
+        console.log(utenti)
+
+
+    </script>
+</body>
+</html>

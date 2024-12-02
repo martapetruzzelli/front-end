@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let nome = 'mario';
+        let cognome = 'rossi';
+        let nomeCognome = nome + cognome;
+        let nomeCognomeInterpolato = `ciao ${nome} ${cognome}`;
+
+        console.log(nome + ' ' + cognome)
+        console.log(nomeCognomeInterpolato);
+
+        let a = 5;
+        let b = '3';
+        let c = 'mela';
+        let d = 0;
+
+        console.log(a * c);
+
+        console.log(Boolean(d));
+
+
+        let anni = prompt('Quanti anni hai?');
+
+        if (anni < 18){
+            document.write('no');
+        }
+        else if (anni >= 18 && anni < 30){
+            document.write('sconto giovani');
+        }
+        else{
+            document.write('ok');
+        }
+        
+
+    </script>
+</body>
+</html>
