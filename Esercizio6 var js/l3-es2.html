@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let spedizione = 7.90;
+
+        let sconto10 = spedizione / 100 * 90;
+        let sconto50 = spedizione / 100 * 50;
+
+        totaleSpesa(55);
+        // const spesa = (10);
+
+        // switch(spesa){
+        //     case '15':  
+        //         console.log('il tuo totale è', spesa + sconto10, '€');
+        //         break;
+        //     case 25:  
+        //         console.log('il tuo totale è', spesa + sconto50, '€');
+        //         break;
+        //     case 50:  
+        //         console.log('il tuo totale è', spesa, '€');
+        //         break;
+        //     default:
+        //         console.log('il tuo totale è', spesa + spedizione, '€')
+        // }
+           
+        function totaleSpesa(spesa){
+
+            if(spesa < 15){
+                console.log('il tuo totale è', spesa + spedizione, '€');
+            }
+            else if(spesa >= 15 && spesa < 25){
+                console.log('il tuo totale è', spesa + sconto10, '€');
+            }
+            else if(spesa >= 25 && spesa < 50){
+                console.log('il tuo totale è', spesa + sconto50, '€');
+            }
+            else{
+                console.log('il tuo totale è', spesa, '€');
+            }
+        }
+
+    </script>
+
+
+
+</body>
+</html>

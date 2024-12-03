@@ -13,31 +13,38 @@
             'mela',
         ]
 
-        console.log(array.includes('Ciao'))
+        verifica('ciao')
+        console.log(array);
+        verifica('ciao');
+        console.log(array);
 
-        function verifica(){
-            if (array.includes('Ciao') == false ){
-                array.push('Ciao');
-                console.log(array)
+        function verifica(nuovoElemento){
+            
+            if (!array.includes(nuovoElemento)){
+                array.push(nuovoElemento);   
             }
+            
+            return array;
         }
 
-        verifica();
+
+
+
 
         let utenti = [];
-        
 
         function dati(nome, cognome, anni){
             let obj = {
-                nome : "Marta",
-                cognome : "Petruzzelli",
-                anni : 26
+                nome : nome,
+                cognome : cognome,
+                anni : anni
             }
 
             utenti.push(obj);
         }
 
-        dati();
+
+        dati('Marta', 'Petruzzelli', 26);
 
         console.log(utenti)
 

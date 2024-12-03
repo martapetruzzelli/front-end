@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        const animali = [
+            'gatto',
+            'cane',
+            'zebra',
+            'orso'
+        ]
+
+        animali.sort();
+        console.log(animali);
+        console.log(animali.reverse());
+        animali.splice(4, 0, animali[0]);
+        animali.splice(0, 1);
+        console.log(animali);
+        animali.push('leone');
+        console.log(animali);
+        console.log(animali.length);
+
+
+        let randomAnimal = Math.floor(Math.random() * animali.length - 1) + 1;
+
+        setInterval(function(){
+             console.log(animali[randomAnimal]);
+        }, 5000)
+
+
+    </script>
+
+</body>
+</html>
