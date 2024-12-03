@@ -8,12 +8,16 @@
 <body>
     <script>
 
-        let spedizione = 7.90;
+        let spedizione = 7.90; // queste sono da inserire nella funzione se vanno usate solo lì
 
-        let sconto10 = spedizione / 100 * 90;
-        let sconto50 = spedizione / 100 * 50;
+        let sconto10 = spedizione / 100 * 90; // spedizione * 0.9 queste sono da inserire nella funzione se vanno usate solo lì
+        let sconto50 = spedizione / 100 * 50; // spedizione * 0.5 queste sono da inserire nella funzione se vanno usate solo lì 
 
         totaleSpesa(55);
+        totaleSpesa(30);
+        totaleSpesa(18);
+        totaleSpesa(3);
+
         // const spesa = (10);
 
         // switch(spesa){
@@ -32,18 +36,23 @@
            
         function totaleSpesa(spesa){
 
+            let risultato;
+
             if(spesa < 15){
-                console.log('il tuo totale è', spesa + spedizione, '€');
+                risultato = spesa + spedizione;
             }
             else if(spesa >= 15 && spesa < 25){
-                console.log('il tuo totale è', spesa + sconto10, '€');
+                risultato = spesa + sconto10;
             }
             else if(spesa >= 25 && spesa < 50){
-                console.log('il tuo totale è', spesa + sconto50, '€');
+                risultato = spesa + sconto50;
             }
             else{
-                console.log('il tuo totale è', spesa, '€');
+                risultato = `${spesa}`;
             }
+
+            console.log('il tuo totale è', risultato, '€');
+
         }
 
     </script>
