@@ -50,19 +50,19 @@ const prodotti = [
 
 // Es 1
 
-let prodottiDisponibili = prodotti.filter (p => p.disponibile === true);
+const prodottiDisponibili = prodotti.filter (p => p.disponibile);
 
 console.log(prodottiDisponibili);
 
 // Es 2
 
-let prodottiCostosi = prodotti.filter (p => p.prezzo >500);
+const prodottiCostosi = prodotti.filter (p => p.prezzo >500);
 
 console.log(prodottiCostosi);
 
 // Es 3
 
-let prodottiScontati = prodotti.map (p => {
+const prodottiScontati = prodotti.map (p => {
 
     p.prezzoScontato = p.prezzo * 0.8;
     return p;
@@ -73,11 +73,14 @@ console.log(prodottiScontati);
 
 // Es 4
 
-// let eliminaProdotto = prodotti.filter (p => p.nome != "Auricolari");
+// const eliminaProdotto = prodotti.filter (p => p.nome.toLowerCase != "euricolari"); 
 
 // console.log(eliminaProdotto);
 
-let eliminaProdotto = prodotti;
+
+//------------------------------
+
+const eliminaProdotto = [...prodotti];
 
 eliminaProdotto.forEach((p, i)=>{
 
@@ -90,3 +93,24 @@ eliminaProdotto.forEach((p, i)=>{
     });
 
 console.log(eliminaProdotto);
+
+
+//-------------------------------
+
+const indice = prodotti.findIndex(p => p.nome.toLowerCase() === 'auricolari');
+const prodottiCopy = [...prodotti];
+prodottiCopy.splice(indice, 1);
+
+console.log(prodottiCopy);
+
+//------------------------------
+
+const risultato = [];
+
+prodotti.forEach(p => {
+    if(p.nome.toLowerCase() !== 'auricolari'){
+        risultato.push(p)
+    }
+})
+
+console.log(risultato);
