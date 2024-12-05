@@ -27,8 +27,7 @@ for ( let prodotto of prodotti){
     card.innerText = prodotto.nome + " : " + prodotto.prezzo + "€";
 
     if(!prodotto.disponibile){
-        card.classList.remove("text-white");
-        card.classList.remove("bg-primary");
+        card.classList.remove("text-white", "bg-primary");
         card.className += " bg-black text-danger"
     }
     row.append(card);

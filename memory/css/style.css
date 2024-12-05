@@ -1,0 +1,30 @@
+#memory{
+    display: flex;
+    flex-wrap : wrap;
+    margin: 50px
+}
+
+.card{
+    width: calc(25% - 2px);
+    aspect-ratio: 1/1;
+    text-align: center;
+    align-items: center;
+    font-size: 5rem;
+    border: 1px solid #000;
+    border-radius: 5px;
+    background-color: rgb(28, 75, 161);
+    perspective: 400px;
+}
+
+.icon{
+    border: 1px solid #000;
+    background-color: coral;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    height: 100%;
+    transition: all 0.5s;
+}
+
+.card.show .icon{
+    transform: rotateY(0deg);
+}
