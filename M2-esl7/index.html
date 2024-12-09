@@ -4,22 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body onload="checkCookie()">
  
+    <div class="container" id="contenitore">
+        <div id="popup">
+            <div id="popup-content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur cum consequuntur quaerat veritatis deserunt sequi, alias facere, suscipit ad quis molestiae ullam! Modi voluptate exercitationem in reprehenderit inventore mollitia facere.</p>
+                <div id="close">+</div>
+            </div>
+        </div>
+    </div>
 
     <script>
       
+      const popup = document.querySelector('#contenitore');
+      const closePopup = document.querySelector('#close');
+
+      if(!getCookie('popup_mostrato')){
+            popup.classList.add('open');
+         }
+
+      closePopup.addEventListener('click', () =>{
+
+        setCookie('popup_mostrato', '1');
+        
+        popup.classList.remove('open');
+
+      })
 
         function setCookie(key, value){
+
             const date = new Date()
+            
             date.setMonth(date.getMonth() + 1)
             
             document.cookie = `${key}=${value}; expires=${date.toUTCString()};`
+
+            // let cookie = `${key}=${value}`;
+            // let expires = `expires=${date.toUTCString()}`;
+
+            // document.cookie = `${cookie}; ${expires}; path=/`;
+        
         }
 
 
         function getCookie(key){
+
             const cookies = document.cookie.split('; ')
 
             const foundCookie = cookies.find(c => c.startsWith(key))

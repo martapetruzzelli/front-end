@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        class Persona{
+
+            constructor(_nome, _cognome, _anni){
+                this.nome = _nome;
+                this.cognome = _cognome;
+                this.anni = _anni;
+            }
+
+            confrontaAnni(persona){
+                
+                if(this.anni > persona.anni){
+                    return `${this.nome} è più vecchio di ${persona.nome}`;
+                }else{
+                    return `${this.nome} è più giovane di ${persona.nome}`
+                }
+            }
+
+        }
+
+        const gigio = new Persona('Gigio', 'Topo', 27);
+        const pino = new Persona('Pino', 'Abete', 29);
+
+        console.log(gigio.confrontaAnni(pino));
+        
+
+
+    </script>
+
+</body>
+</html>
