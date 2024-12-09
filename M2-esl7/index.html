@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="checkCookie()">
+ 
+
+    <script>
+      
+
+        function setCookie(key, value){
+            const date = new Date()
+            date.setMonth(date.getMonth() + 1)
+            
+            document.cookie = `${key}=${value}; expires=${date.toUTCString()};`
+        }
+
+
+        function getCookie(key){
+            const cookies = document.cookie.split('; ')
+
+            const foundCookie = cookies.find(c => c.startsWith(key))
+
+            return foundCookie ? foundCookie.split('=')[1] : null;
+
+        }
+
+
+
+        function checkCookie(){
+            // let user = getCookie("username");
+            
+            // if (user != ""){
+            //     alert("bentornato " + user);
+            // }
+            // else{
+            //     user = prompt("inserisci il tuo nome", "");
+            //     if (user != "" && user != null) {
+            //         setCookie("username", user);
+            //      }
+
+            // }
+            
+
+
+            if (!getCookie("username")){
+                let user = prompt("ciao", "");
+                setCookie("username", user);
+                console.log(getCookie("username"))
+            }else{
+                console.log("fatto");
+            }
+
+        }
+        
+       
+
+    </script>
+</body>
+</html>
