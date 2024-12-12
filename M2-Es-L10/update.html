@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+</head>
+<body>
+    
+    <header class="d-flex justify-content-center py-3">
+        <ul class="nav nav-pills">
+          <li class="nav-item"><a href="index.html" class="nav-link">Lista piante</a></li>
+          <li class="nav-item"><a href="create.html" class="nav-link">Aggiungi pianta</a></li>
+          <li class="nav-item"><a href="update.html" class="nav-link active" aria-current="page">Modifica pianta</a></li>
+        </ul>
+    </header>
+
+    <div class="container">
+        <h1>Modifica una pianta</h1>
+        <form id="edit-form">
+                
+            <input type="text" id="specie" class="form-control my-2" required placeholder="Specie">
+                <h5>La pianta ha i fiori?</h5>
+                <div class="btn-group" role="group">
+                    <input type="checkbox" id="fioricheck" class="form-control btn-check" autocomplete="off">
+                    <label for="fioricheck" class="btn btn-outline-primary">Sì</label>
+                </div>
+                <input type="number" id="prezzo" class="form-control my-2" required placeholder="Prezzo">
+
+                <button class="btn btn-primary">Modifica una pianta</button>
+            
+        </form>
+    </div>   
+        
+    <script type="module" src="./js/update.js"></script>
+
+</body>
+</html>

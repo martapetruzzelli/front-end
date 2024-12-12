@@ -1,0 +1,22 @@
+{
+  "piante": [
+    {
+      "id": 1,
+      "specie": "Margherita",
+      "fiori": "on",
+      "prezzo": 5
+    },
+    {
+      "id": 2,
+      "specie": "Rosa",
+      "fiori": "on",
+      "prezzo": 1
+    },
+    {
+      "id": 3,
+      "specie": "Edera",
+      "fiori": "off",
+      "prezzo": 9
+    }
+  ]
+}

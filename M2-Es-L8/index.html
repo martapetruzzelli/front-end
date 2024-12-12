@@ -21,8 +21,10 @@
                 
                 if(this.anni > persona.anni){
                     return `${this.nome} è più vecchio di ${persona.nome}`;
-                }else{
+                }else if(this.anni < persona.anni){
                     return `${this.nome} è più giovane di ${persona.nome}`
+                }else{
+                    return `${this.nome} ha la stessa età di ${persona.nome}`
                 }
             }
 
@@ -32,7 +34,8 @@
         const pino = new Persona('Pino', 'Abete', 29);
 
         console.log(gigio.confrontaAnni(pino));
-        
+        console.log(pino.confrontaAnni(gigio));
+
 
 
     </script>
