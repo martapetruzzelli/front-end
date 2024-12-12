@@ -17,6 +17,18 @@
       "specie": "Edera",
       "fiori": "off",
       "prezzo": 9
+    },
+    {
+      "id": 4,
+      "specie": "menta",
+      "fiori": false,
+      "prezzo": "70"
+    },
+    {
+      "specie": "girasole",
+      "fiori": true,
+      "prezzo": 9,
+      "id": 5
     }
   ]
 }

@@ -32,8 +32,10 @@
                 }
 
                 const photos = await response.json();
+                console.log(photos)
                 
                 const photoSet = photos.slice(0,10);
+                console.log(photoSet)
 
                 photoSet.forEach(function(photo){
 

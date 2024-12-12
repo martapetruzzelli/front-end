@@ -29,7 +29,7 @@ async function init(){
         const plant = {
             id,
             specie: specie.value,
-            fiori: fiori.value,
+            fiori: fiori.checked,
             prezzo: prezzo.value
         }
 
@@ -41,6 +41,8 @@ async function init(){
     })
 
 }
+
+init()
 
 async function getPlantById(id){
     const response = await fetch(`${environment.apiUrl}/${id}`,{

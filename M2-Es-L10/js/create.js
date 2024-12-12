@@ -14,7 +14,7 @@ if(form){
 
         const newPlant = {
             specie: specie.value,
-            fiori: Boolean(fiori.value),
+            fiori: fiori.checked,
             prezzo: Number(prezzo.value),
         }
 
@@ -30,7 +30,7 @@ if(form){
         try{
             const response = await fetch(environment.apiUrl, {
                 method: 'POST',
-                header: { 'Content-Type': 'application/json' },
+                headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(newPlant),
             })
             

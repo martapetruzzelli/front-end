@@ -4,7 +4,7 @@ async function getPlant(){
 
     const response = await fetch(environment.apiUrl, {
         method: 'GET',
-        headers: { 'Content-type': 'application/json'}
+        headers: { 'Content-Type': 'application/json'}
     })
 
     return response.json()
