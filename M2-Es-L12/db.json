@@ -1,0 +1,34 @@
+{
+  "piante": [
+    {
+      "id": 1,
+      "specie": "Margherita",
+      "fiori": true,
+      "prezzo": 5
+    },
+    {
+      "id": 2,
+      "specie": "Rosa",
+      "fiori": true,
+      "prezzo": 1
+    },
+    {
+      "id": 3,
+      "specie": "Edera",
+      "fiori": false,
+      "prezzo": 9
+    },
+    {
+      "id": 4,
+      "specie": "menta",
+      "fiori": false,
+      "prezzo": "70"
+    },
+    {
+      "specie": "girasole",
+      "fiori": true,
+      "prezzo": 9,
+      "id": 5
+    }
+  ]
+}

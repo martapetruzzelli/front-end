@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "db": "npx json-server db.json"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "json-server": "^0.17.4"
+  }
+}
